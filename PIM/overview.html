@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systemize | Gestão agropecuária  </title>
+    
+    <!--biblioteca de gráfico JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <link rel="stylesheet" href="assets/dashs.css">
+    <link rel="stylesheet" href="assets/navbar.css">
+
+    <link rel="shortcut icon" type="imagex/png" href="images/logo-ico.ico">
+
+</head>
+<body>
+
+
+    <div>
+
+        <header>
+            <h1>SYSTEMIZE | GESTÃO AGROPECUÁRIA</h1>
+        </header>
+
+        <div class="container">
+
+            <footer>
+                <nav class="navbar">
+                    
+                    <ul class="navbar-links">
+                        <li class="li-bar"><a href="overview.html">Overview</a></li>
+                        <li class="li-bar"><a href="sobre.html">Sobre</a></li>
+                        <li class="li-bar"><a href="dashs.html">Dashboards</a></li>
+                        <li class="li-bar"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+            <article>
+                <header>
+                    <h2>Artigo: Produção</h2>
+                </header>
+                <section>
+                    <h3>Seção 1 do artigo - Produção por mês</h3>
+                    <i><h6 style="padding-left: 40px;">(Em toneladas)</h6></i>
+                    <div class="chart-container">
+                        <canvas id="pizzaChart1"></canvas>
+                    </div>
+                </section>
+                <section>
+                    <h3>Quantidade produzida (mês)</h3>
+                    <i><h6 style="padding-left: 40px;">(Em toneladas)</h6></i>
+                </section>
+                <footer>
+                    <p style="text-align: center;">Esse foi o total <b>produzido</b> na sua fazenda de acordo com o tempo</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>Artigo: Perdas</h2>
+                </header>
+                <section>
+                    <h3>Perda de materia prima</h3>
+                    <i><h6 style="padding-left: 40px;">(Em toneladas)</h6></i>
+                    <div class="chart-container">
+                        <canvas id="pizzaChart2"></canvas>
+                    </div>
+                </section>
+                <section>
+                    <h3>Seção 4 do artigo - Principais desvios de produto</h3>
+                    <i><h6 style="padding-left: 40px;">(Em Kg)</h6></i>
+                    <div class="text-container">
+                        <div class="flex-dados">
+                            <h5><img src="#icon1" alt="" class="icon-dados">dado 1</h5>
+                            <h5><img src="#icon2" alt="" class="icon-dados">dado 2</h5>
+                            <h5><img src="#icon3" alt="" class="icon-dados">dado 3</h5>
+                            <h5><img src="#icon4" alt="" class="icon-dados">dado 4</h5>
+                            <h5><img src="#icon5" alt="" class="icon-dados">dado 5</h5>
+                            <h5><img src="#icon6" alt="" class="icon-dados">dado 6</h5>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <p style="text-align: center;">Essas são as <b>perdas</b> da sua fazenda de acordo com o tempo</p>
+                </footer>
+            </article>
+        </div>
+    </div>
+
+        <footer style="display: flex; justify-content: flex-start;">
+            <p>Sua fazenda está</p>
+            <p><b>&nbsp;boa&nbsp;</b></p>
+            <p>de acordo com os dados adquiridos</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Dados e configuração para o Gráfico de Pizza 1
+        const ctx1 = document.getElementById('pizzaChart1').getContext('2d');
+        const pizzaChart1 = new Chart(ctx1, {
+            type: 'pie',
+            data: {
+                labels: ['Setembro', 'Outubro', 'Novembro'],
+                datasets: [{
+                    label: 'Produção por mês',
+                    data: [30.3, 50.12, 20.0],
+                    backgroundColor: ['#4f5661', '#3e4e68', '#445672'],
+                    borderWidth: 10
+                }]
+            }
+        });
+
+        // Dados e configuração para o Gráfico de Pizza 3
+        const ctx2 = document.getElementById('pizzaChart2').getContext('2d');
+        const pizzaChart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Setembro', 'Outubro', 'Novembro'],
+                datasets: [{
+                    label: 'Mat. prima',
+                    data: [190, 94, 267],
+                    backgroundColor: ['#5d708e', '#4f5661', '#3e4e68'],
+                    borderWidth: 10
+                }]
+            }
+        });
+    </script>
+
+</body>
+</html>

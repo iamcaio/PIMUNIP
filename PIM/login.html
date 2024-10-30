@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Systemize | Login</title>
+    <link rel="shortcut icon" type="imagex/png" href="images/logo-ico.ico">
+
+
+    <link rel="stylesheet" href="./assets/login.css">
+</head>
+<body>
+    <form class="form">
+        <span class="input-span">
+            <label for="email" class="label">Email</label>
+            <input  id="email" runat="server" type="text" name="username"/>
+        </span>
+        <span class="input-span">
+            <label for="password" class="label">Password</label>
+            <input  id="password" runat="server" type="password" name="password"/>
+        </span>
+            <input class="submit" type="submit" value="Log in" onclick="Login(event)"/>
+    </form>
+
+    <script src="login.js"></script>
+</body>
+</html>
