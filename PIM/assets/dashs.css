@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close');
+
+/*--------------------------------------------------------
+        STYLE PARA TODO A PAGINA DE OVERVIEW
+--------------------------------------------------------*/
+
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 body {
@@ -17,12 +32,11 @@ header, nav, article, section, aside, footer, div {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 5px;
+    border-radius: 5px;
 }
 header {
-    background-color: #f4f4f4;
-}
-nav {
-    background-color: #ddd;
+    background-color: #b9b9b9;
+    height: 110px;
 }
 article {
     display: flex;
@@ -76,6 +90,35 @@ article {
 footer {
     grid-area: footer;
 }
+
+.h3-secoes {
+    margin: 20px;
+}
+
+/*--------------------------------------------------------
+        STYLE PARA GRÁFICOS EM GERAL
+--------------------------------------------------------*/
+
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+.bar {
+    width: 76px;
+    background-color: #3e4e68;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
 .chart-container {
     width: 600px;
     margin: 0 auto;
@@ -93,6 +136,30 @@ footer {
 .flex-dados {
     display: flex;
     box-shadow: none;
-
+    justify-items: baseline;
     justify-content: space-evenly;
+}
+
+/*--------------------------------------------------------
+        STYLE PARA ICONES
+--------------------------------------------------------*/
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: none;
+}
+
+.icon {
+    font-size: 16px;
+    box-shadow: none;
+    margin: 7px;
 }
