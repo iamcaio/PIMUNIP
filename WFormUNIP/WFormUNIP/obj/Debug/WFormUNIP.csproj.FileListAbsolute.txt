@@ -1,0 +1,11 @@
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\bin\Debug\WFormUNIP.exe.config
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\bin\Debug\WFormUNIP.exe
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\bin\Debug\WFormUNIP.pdb
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.csproj.AssemblyReference.cache
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.telaPrinc.resources
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.Properties.Resources.resources
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.telaLogin.resources
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.csproj.GenerateResource.cache
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.csproj.CoreCompileInputs.cache
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.exe
+C:\Users\clg05\source\repos\WFormUNIP\WFormUNIP\obj\Debug\WFormUNIP.pdb
