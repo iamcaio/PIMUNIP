@@ -1,0 +1,15 @@
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.csproj.AssemblyReference.cache
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.FormCategorias.resources
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.FormClientes.resources
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.FormFornecedores.resources
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.FormPedidos.resources
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.FormPrincipal.resources
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.FormProdutos.resources
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.Properties.Resources.resources
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.csproj.GenerateResource.cache
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.csproj.CoreCompileInputs.cache
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\bin\Debug\GestaoDeProdutos.exe.config
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\bin\Debug\GestaoDeProdutos.exe
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\bin\Debug\GestaoDeProdutos.pdb
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.exe
+C:\Users\clg05\source\repos\GestaoDeProdutos\GestaoDeProdutos\obj\Debug\GestaoDeProdutos.pdb
