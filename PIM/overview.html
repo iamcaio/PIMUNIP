@@ -8,7 +8,7 @@
     <!--biblioteca de gráfico JS-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <link rel="stylesheet" href="assets/dashs.css">
+    <link rel="stylesheet" href="assets/overview.css">
     <link rel="stylesheet" href="assets/navbar.css">
 
     <link rel="shortcut icon" type="imagex/png" href="images/logo-ico.ico">
@@ -38,7 +38,7 @@
             
             <article>
                 <header>
-                    <h2>Produção matéria prima</h2>
+                    <h2 class="h2-secoes">Produção matéria prima</h2>
                 </header>
                 <section>
                     <h3 class="h3-secoes">Produção por mês</h3>
@@ -48,6 +48,7 @@
                 <section>
                     <h3 class="h3-secoes">Quantidade produzida (Ano)</h3>
                     <i><h6 style="padding-left: 40px;">(Em toneladas)</h6></i>
+                    
                 </section>
                 <footer>
                     <p style="text-align: center;">Esse foi o total <b>produzido</b> da sua fazenda de acordo com o tempo</p>
@@ -56,7 +57,7 @@
 
             <article>
                 <header>
-                    <h2>Perdas</h2>
+                    <h2 class="h2-secoes">Perdas</h2>
                 </header>
                 <section>
                     <h3 class="h3-secoes">Perda de materia prima</h3>
@@ -69,11 +70,20 @@
                     <h3 class="h3-secoes">Médias gerais</h3>
                     <div class="text-container">
 
-                        <div class="menu">
-                            <div class="menu-item"><span class="icon fas fa-check"></span> dado de ganhos</div>
-                            <div class="menu-item"><span class="icon fas fa-xmark"></span> dado de perdas</div>
-                            <div class="menu-item"><span class="icon fas fa-dollar-sign"></span> dado de lucro</div>
-                            <div class="menu-item"><span class="icon fas fa-chart-bar"></span> dado de produzido mês</div>
+                        <div class="medias-gerais">
+                            <div class="media-item">
+                        <!--FAZER TOOLTIP COM CSS NOS 4 DIVs DE VALORES DA FAZENDA!!!--> 
+                                <i class="fa-solid fa-check"></i><span id="mediaGanhos"></span>
+                            </div>
+                            <div class="media-item">
+                                <i class="fa-solid fa-xmark"></i><span id="mediaPerdas"></span>
+                            </div>
+                            <div class="media-item">
+                                <i class="fa-solid fa-coins"></i><span id="mediaLucro"></span>
+                            </div>
+                            <div class="media-item">
+                                <i class="fa-solid fa-layer-group"></i><span id="mediaProducao"></span>
+                            </div>
                         </div>
 
                     </div>
@@ -86,9 +96,7 @@
     </div>
 
         <footer style="display: flex; justify-content: flex-start;">
-            <p>Sua fazenda está</p>
-            <p><b>&nbsp;boa&nbsp;</b></p>
-            <p>de acordo com os dados adquiridos</p>
+            <p>Sua fazenda está <label id="res">-</label> de acordo com os dados adquiridos</p>
         </footer>
 
     </div>
@@ -96,78 +104,8 @@
     <!--SCRIPT PARA BUSCAR ICONES (BIBLIOTECA DE ICONES **Font Awesome**)-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>    
 
-    <!--GERAÇÃO DE DADOS ALEATORIOS PAR SE COLOCAR NOS GRÁFICOS-->
-    <script>
-        // Dados fictícios de produção (em toneladas)
-        const productionData = [
-            { food: 'Trigo', value: Math.floor(Math.random() * 200) + 50 },
-            { food: 'Milho', value: Math.floor(Math.random() * 200) + 50 },
-            { food: 'Soja', value: Math.floor(Math.random() * 200) + 50 },
-            { food: 'Arroz', value: Math.floor(Math.random() * 200) + 50 },
-            { food: 'Cevada', value: Math.floor(Math.random() * 200) + 50 }
-        ];
-
-        // Função para gerar o gráfico
-        const barChartContainer = document.getElementById('bar-chart');
-        productionData.forEach(data => {
-            const bar = document.createElement('div');
-            bar.className = 'bar';
-            bar.style.height = data.value + 'px';
-            bar.textContent = `${data.food} (${data.value} t)`;
-            barChartContainer.appendChild(bar);
-        });
-
-
-
-        const simulatedData = [
-            Math.floor(Math.random() * 30) + 10,  // Setembro
-            Math.floor(Math.random() * 30) + 10,  // Outubro
-            Math.floor(Math.random() * 30) + 10   // Novembro
-        ];
-
-        // Configuração dos dados para o gráfico
-        const data = {
-            labels: ['Arroz', 'Cevada', 'Milho'],
-            datasets: [{
-                data: simulatedData, // Usa os valores simulados
-                backgroundColor: ['#4A5D73', '#7A8C9A', '#2E4057'],
-                borderColor: '#ffffff',
-                borderWidth: 2
-            }]
-        };
-
-        // Configuração do gráfico
-        const config = {
-            type: 'pie',
-            data: data,
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                let label = context.label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
-                                label += context.raw + ' t';
-                                return label;
-                            }
-                        }
-                    }
-                }
-            }
-        };
-
-        // Inicialização do gráfico
-        const myPieChart = new Chart(
-            document.getElementById('myPieChart'),
-            config
-        );
-    </script>
+    <!--GERAÇÃO DE DADOS ALEATORIOS | Arquivo .JS-->
+    <script src="fazenda.js"></script>
 
 </body>
 </html>

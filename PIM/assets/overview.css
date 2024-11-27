@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close');
+
+/*--------------------------------------------------------
+        STYLE PARA TODO A PAGINA DE OVERVIEW
+--------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header, nav, article, section, aside, footer, div {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+header {
+    background-color: #b9b9b9;
+    height: 110px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #f9f9f9;
+}
+section {
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+
+footer {
+    background-color: #ddd;
+    padding: 15px;
+}
+.container {
+    display: flex;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "article aside1 aside2"
+        "footer footer footer";
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container2 {
+    display: none;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "article aside1 aside2"
+        "footer footer footer";
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.h2-secoes {
+    margin: 30px;
+}
+
+.h3-secoes {
+    margin: 20px;
+}
+
+.medias-gerais {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 16px;
+}
+.media-item {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    gap: 10px;
+}
+
+/*--------------------------------------------------------
+        STYLE PARA GRÁFICOS EM GERAL
+--------------------------------------------------------*/
+
+.bar-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+.bar {
+    width: 76px;
+    background-color: #3e4e68;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+.chart-container {
+    width: 600px;
+    margin: 0 auto;
+    border: transparent;
+    box-shadow: none;
+}
+
+.text-container {
+    width: 100%;
+    margin: 0px;
+    border: transparent;
+    box-shadow: none;
+}
+
+.flex-dados {
+    display: flex;
+    box-shadow: none;
+    justify-items: baseline;
+    justify-content: space-evenly;
+}
+
+/*--------------------------------------------------------
+        STYLE PARA ICONES
+--------------------------------------------------------*/
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: none;
+}
+
+.icon {
+    font-size: 16px;
+    box-shadow: none;
+    margin: 7px;
+}
